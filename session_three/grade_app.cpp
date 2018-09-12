@@ -3,17 +3,17 @@ using namespace std;
 
 int main(){
   int score;
-  cout << "Enter a number greater than 0 and less than 100" << endl;
-  cin >> score;
+  char input;  
   do{
+    cout << "Enter a number greater than 0 and less than 100." << endl;
+    cin >> score;
     if( score >= 80 ) cout << "A" << endl;
     else if( score >= 70 ) cout << "B";
     else if( score >= 69 ) cout << "C";
     else if( score >= 59 ) cout << "D";
-    else{ cout << "E" << endl; }
-    cin >> score;
-  }while( score > 0 && score <=100 );
-  cin.get();
-//cin.get(); -> This line is necessary for linux users
+    else { cout << "E" << endl; }
+    cout << "Enter y to continue, 'n' to exit" << endl;
+    cin >> input;
+  }while( input == 'y' );
   return 0;
 }

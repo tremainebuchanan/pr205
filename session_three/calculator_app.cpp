@@ -18,11 +18,11 @@ int main() {
     cout << "Enter the second number" << endl;
     cin >> input_two;
     //print the results
-    cout << "The addition of " << input_one << " and " << input_two << " is " << addition( input_one, input_two );
-    cout << "The difference of " << input_one << " and " << input_two << " is " << substraction( input_one, input_two );
-    cout << "The division of " << input_one << " and " << input_two << " is " << division( input_one, input_two );
+    cout << "The addition of " << input_one << " and " << input_two << " is " << addition( input_one, input_two ) << endl;
+    cout << "The difference of " << input_one << " and " << input_two << " is " << subtraction( input_one, input_two ) << endl;
+    cout << "The division of " << input_one << " and " << input_two << " is " << division( input_one, input_two ) << endl;
     cout << "The product of " << input_one << " and " << input_two << " is " << multiplication( input_one, input_two );
-    cout << "Do you want to continue? Enter 'y' to continue, 'n' to exit";
+    cout << "Do you want to continue? Enter 'y' to continue, 'n' to exit" << endl;
     cin >> input;
   } while(input == 'y');
   return 0;

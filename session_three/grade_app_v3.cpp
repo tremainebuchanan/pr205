@@ -37,8 +37,8 @@ char get_letter_grade( int grade ){
     case 9:
     case 8: letter_grade = 'A'; break;
     case 7: letter_grade = 'B'; break;
-    case 6: letter_grade = 'C' break;
-    case 5: letter_grade = 'D' break;
+    case 6: letter_grade = 'C'; break;
+    case 5: letter_grade = 'D'; break;
     default: letter_grade = 'E';
   }
   return letter_grade;
