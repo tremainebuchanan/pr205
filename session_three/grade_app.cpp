@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
   int score;
-  char input;  
+  char input;
   do{
     cout << "Enter a number greater than 0 and less than 100." << endl;
     cin >> score;

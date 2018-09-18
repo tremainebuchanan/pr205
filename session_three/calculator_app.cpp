@@ -21,7 +21,7 @@ int main() {
     cout << "The addition of " << input_one << " and " << input_two << " is " << addition( input_one, input_two ) << endl;
     cout << "The difference of " << input_one << " and " << input_two << " is " << subtraction( input_one, input_two ) << endl;
     cout << "The division of " << input_one << " and " << input_two << " is " << division( input_one, input_two ) << endl;
-    cout << "The product of " << input_one << " and " << input_two << " is " << multiplication( input_one, input_two );
+    cout << "The product of " << input_one << " and " << input_two << " is " << multiplication( input_one, input_two ) << endl;
     cout << "Do you want to continue? Enter 'y' to continue, 'n' to exit" << endl;
     cin >> input;
   } while(input == 'y');
