@@ -7,3 +7,35 @@
 * number
 *
 **/
+#include <iostream>
+using namespace std;
+
+int main(){
+  int input;
+  int i;
+  int factor_count = 0;
+  cout << "Enter any number less than 40" << endl;
+  cin >> input;
+  if( input > 40){
+    cout << "You have entered a value that greater than 40" << endl;
+  }else{
+    if( input == 2 ){
+      cout << "The number entered is a prime number" << endl;
+    }else{
+      for( i = 1; i <= input; i++){
+            if( input % i == 0){
+              factor_count = factor_count + 1;
+            }
+      }
+      if( factor_count > 2){
+        cout << input << " is not a prime number. factor count is "
+        << factor_count << endl;
+      }else{
+        cout << input << " is a prime number. factor count is " << factor_count << endl;
+      }
+    }
+  }
+  cin.get();
+  cin.get();
+  return 0;
+}
