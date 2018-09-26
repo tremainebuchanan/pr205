@@ -5,7 +5,7 @@ int add( int num_one, int num_two );
 int subtract( int num_one, int num_two );
 int divide( int num_one, int num_two );
 int multiply( int num_one, int num_two );
-void print_menu ();
+void print_menu();
 
 int main(){
   int first_input;
@@ -46,7 +46,7 @@ int main(){
   //cin.get();
   //cin.get();
   return 0;
-}
+} //end of main
 /**
  * Prints the menu to the screen.
  */
