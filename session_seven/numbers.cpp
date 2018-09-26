@@ -11,10 +11,9 @@ int main(){
 		int row = 4; 
 		int col = 3;
 		for(int i = 0; i < row; i++){
+				cout << endl << "Row Number " << i << "-->";
 				for( int j=0; j < col; j++){
-					cout << "Value of I " << i << endl;
-					cout << "Value of J " << j <<endl;
-					cout << "Iteration number " << i+1;
+					cout << " " << numbers[i][j];
 				}
 		}
 		return 0;
