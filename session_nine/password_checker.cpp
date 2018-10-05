@@ -8,6 +8,9 @@ int main(){
 	char password_two[80];
 	int len_one;
 	int len_two;
+	
+	//Add code to tell the user to enter password, then password again
+	//to confirm
 	cin >> password_one;
 	cin >> password_two;
 
@@ -15,16 +18,17 @@ int main(){
 	len_one = strlen(password_one);
 	len_two = strlen(password_two);
 
+	
 	if(strcmp(password_one, password_two) == 0){
 		cout << "Passwords match" << endl;
 	}else{
 		cout << "Passwords do not match" << endl;
 	}
 
-	if(len_one > 6 && len_two > 6){
-		cout << "Password length is greater than 6 characters" << endl;
+	if(len_one >= 6 && len_two >= 6){
+		cout << "Values greater than or equal to six" << endl;
 	}else{
-		cout << "Password length is less than 6 characters" << endl;
+		cout << "Values less than six" << endl;
 	}
 	return 0;
 }
