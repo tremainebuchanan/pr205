@@ -1,3 +1,4 @@
+//Author: Tremaine Buchanan
 #include <iostream>
 
 using namespace std;
@@ -26,12 +27,27 @@ class Calculator{
 	int add(){
 		return num_one + num_two;
 	}
-	
-	//Create the divide, mulitply and substraction functions
-	
-	void print(){
-		cout << num_one << endl;
-		cout << num_two << endl;
+	//Find the difference between two numbers
+	int subtract(){
+		return num_one - num_two;
+	}
+	//Divides two numbers and returns the quotient
+	int divide(){
+		return num_one / num_two;
+	}
+	//Multiplies two numbers and returns the product
+	int mulitply(){
+		return num_one * num_two;
+	}	
+
+	//Accessor function - this is used to get return the value of a private
+	//member of the Calculator class
+	int get_num_one(){
+		return num_one;
+	}
+
+	int get_num_two(){
+		return num_two;
 	}
 	//Best practise to have the destructor in the class.
 	//However it is not a requirement as it is automatically
@@ -39,12 +55,14 @@ class Calculator{
 	~Calculator(){}	
 };//End of Class Definition
 int main(){
-	//int number;
 	Calculator calculator(40, 20);//Instance of the class
-	//calculator.print();
-	//Print the result of each function of the calculator class
-	cout << calculator.add()<<endl;
-	//Calling the add function of the
-	//calculator class in line 20.
+	cout << "The sum of " << calculator.get_num_one() << " and " << calculator.get_num_two() 
+	<< " is " << calculator.add() << endl;
+	cout << "The difference between " << calculator.get_num_one() << " and " << calculator.get_num_two()
+		 << " is " << calculator.subtract() << endl;
+	cout << "The product of " << calculator.get_num_one() << " and " << calculator.get_num_two()
+		 << " is " << calculator.mulitply() << endl;
+	cout << "The quotient of " << calculator.get_num_one() << " and " << calculator.get_num_two()
+		 << " is " << calculator.divide() << endl;
 	return 0;
 }
