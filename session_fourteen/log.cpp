@@ -75,6 +75,8 @@ class Log
         void set_message( string log_message ){
             message = log_message;
         }
+        //Destructor
+        ~Log(){};
 };
 
 int main()
