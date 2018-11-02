@@ -19,6 +19,20 @@ class Log{
             log_file.close();
             return 0;
         };
+
+        void index(){
+            ifstream stream;
+            string message;
+            stream.open("log.txt", ios::out);
+            stream >> message;
+            cout << message;
+            cout << endl << "Starting reading from file";
+            while(!stream.eof()){
+                stream >> message;
+                cout << message;
+            }
+            stream.close();
+        }
 };
 
 int main(){
@@ -27,11 +41,27 @@ int main(){
     // of the ofstream object as per below.
     ofstream file_handle("log.txt", ios::app);
     if(file_handle.is_open()){
-        file_handle << "2018-01-01 - User logged in.\n";
+        file_handle << "20180101 Userloggedin.\n";
+        file_handle << "20180101 Userloggedin.\n";
+        file_handle << "20180101 Userloggedin.\n";
         file_handle.close();
     }else{
         cout << "Unable to open log.txt";        
-    } 
-    
+    }
+
+    ifstream stream;
+    string message;
+    int date;
+    stream.open("log.txt", ios::out);
+    stream >> date >> message;
+    //cout << message << endl;
+    //cout << date << endl << "Starting reading from file";
+    while (!stream.eof())
+    {
+        stream >> date >> message;
+        cout << date << endl << message << endl;
+    }
+    stream.close();
+
     return 0;
 }
