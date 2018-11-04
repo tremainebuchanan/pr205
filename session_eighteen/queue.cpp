@@ -17,7 +17,7 @@ class Queue{
         void shift_array()
         {
             int i = 0;
-            for (; i < capacity - 1; i++)
+            for (; i < cust_count - 1; i++)
             {
                 customers[i] = customers[i + 1];
             }
