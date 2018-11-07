@@ -4,10 +4,10 @@
 using namespace std;
 class Log{
     char file_name[8] = "log.txt";
-    char message[];
+    string message;
     public:
-        Log(char log_message[]){
-            strcpy(message, log_message);
+        Log(string log_message){
+            message = log_message;
         };
         
         int save(){
